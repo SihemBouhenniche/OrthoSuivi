@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-toolbar app dense color = "deep-purple darken-1" dark>
-      <v-toolbar-title class = "title"> {{name}} </v-toolbar-title>
+    <v-toolbar app color = "grey lighten-5">
+      <v-toolbar-title class = "font-weight-medium headline gradient"> {{name}} </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-menu
@@ -13,7 +13,7 @@
             flat
             key = "Langues"
             >
-            <v-icon left>language</v-icon>
+            <v-icon left class = "gradient">language</v-icon>
             Langues
           </v-btn>
           <v-list>
@@ -27,7 +27,7 @@
           </v-list>
         </v-menu>
         <v-btn flat  key = "Connexion" router to = "">
-          <v-icon left>account_circle</v-icon>
+          <v-icon left class = "gradient">account_circle</v-icon>
           Connexion
         </v-btn>
       </v-toolbar-items>

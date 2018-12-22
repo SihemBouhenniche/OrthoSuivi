@@ -4,15 +4,24 @@
       <v-toolbar flat color = "transparent">
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn flat color="deep-purple darken-3" v-for = "item in items" :key = "item.title" @click="$vuetify.goTo(item.link, options)">
+          <v-btn flat color="blue darken-3" v-for = "item in items" :key = "item.title" @click="$vuetify.goTo(item.link, options)">
             {{item.title}}
           </v-btn>
         </v-toolbar-items>
       </v-toolbar>
-      <v-layout column align-center justify-center class="white--text">
-        <img :src="require('../assets/logo.png')" alt="Vuetify.js">
-        <h1 class="deep-purple--text mb-2 display-2 text-xs-center">OrthoSuivui</h1>
-        <div class="deep-purple--text title mb-3 text-xs-center">Build your application today!</div>
+      <v-layout row wrap class="ma-5 pa-5">
+        <v-flex xs12 sm6 md4>
+          <h1 class="deep-purple--text h1 gradient">
+            ORTHOSUIVI
+          </h1>
+          <div class="black--text subheading mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </div>
+          <ConnexionDialog/>
+        </v-flex>
       </v-layout>
     </v-parallax>
     <DefinitionSection id= "definition"/>
@@ -23,10 +32,12 @@
 <script>
   import Devider from '../components/Devider'
   import DefinitionSection from '../components/DefinitionSection'
+  import ConnexionDialog from '../components/ConnexionDialog'
   export default {
     components: {
       DefinitionSection,
-      Devider
+      Devider,
+      ConnexionDialog
     },
     data: () => ({
       items : [
@@ -51,3 +62,18 @@
     })
   }
 </script>
+<style>
+  .h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.15em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .gradient{
+    /*background: -webkit-linear-gradient(0deg, #4527A0 0%, #EC407A 100%);*/
+    background: -webkit-linear-gradient(0deg, #1A237E 0%, #80DEEA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
