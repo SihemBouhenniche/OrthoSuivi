@@ -26,18 +26,30 @@
     </v-parallax>
     <DefinitionSection id= "definition"/>
     <Devider/>
+    <ServicesSection id = "services"/>
+    <WhySection id="why"/>
+    <ContactSection/>
+    <Footer/>
   </section>
 </template>
 
 <script>
   import Devider from '../components/Devider'
   import DefinitionSection from '../components/DefinitionSection'
+  import ServicesSection from '../components/ServicesSection'
+  import WhySection from '../components/WhySection'
+  import ContactSection from '../components/ContactSection'
   import ConnexionDialog from '../components/ConnexionDialog'
+  import Footer from '../components/Footer'
   export default {
     components: {
       DefinitionSection,
       Devider,
-      ConnexionDialog
+      ConnexionDialog,
+      ServicesSection,
+      WhySection,
+      ContactSection,
+      Footer,
     },
     data: () => ({
       items : [
@@ -51,7 +63,7 @@
         },
         {
           title : "Pourqoui OrthoSuivi ?",
-          link : "",
+          link : "#why",
         },
       ],
       options : {
