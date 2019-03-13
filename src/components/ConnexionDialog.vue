@@ -2,8 +2,8 @@
   <v-layout row justify-center>
     <v-dialog v-model="dialog" max-width="500px">
       <v-btn slot="activator" 
-            style = "background: -webkit-linear-gradient(0deg, #1A237E 0%, #80DEEA 100%); margin-top: 30px;"
-            class="white--text"
+            style = "margin-top: 30px; height: 60px; width: 200px;"
+            class = "title"
             round
             large>
             Connexion

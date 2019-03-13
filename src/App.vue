@@ -1,12 +1,20 @@
 <template>
   <v-app>
-    <v-toolbar app color = "grey lighten-5">
-      <v-toolbar-title class = "font-weight-medium headline gradient"> {{name}} </v-toolbar-title>
+    <v-toolbar app flat color = "grey lighten-5" height="80px">
+      <v-toolbar-title class = "mx-5 px-5 font-weight-medium headline gradient"> {{name}} </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-icon  color = "green darken-2"> {{phoneNumber.icon}} </v-icon>
-      <v-toolbar-title class = "subheading"> {{phoneNumber.number}} </v-toolbar-title>
+      <v-toolbar-items class="hidden-sm-and-down mx-5 px-5 ">
+        <v-btn flat v-for = "item in links" :key = "item.title">
+          <v-img :src="getImgUrl(item.icon)"  height="40px" width="40px" ></v-img>
+          <div style="display: inline-block; margin-left: 10px;" >
+            <span class="font-weight-bold"> {{item.title}} </span><br>
+            <span class="font-weight-regular"> {{item.subtitle}} </span>
+          </div>
+        </v-btn>
+      </v-toolbar-items>
     </v-toolbar>
     <v-content>
+        <v-divider style = "background-color: #BDBDBD; margin-left: 150px; margin-right: 150px;"></v-divider>
         <router-view></router-view>
     </v-content>
   </v-app>
@@ -18,24 +26,31 @@
   name: 'App',
   data () {
     return {
-      name : "OrthoSuivi",
-      phoneNumber : {
-        number : "+213 512 345 678",
-        icon : "phone"
-      },
+      name : "ERO",
       links : [
         {
-          link : "العربية",
+          title : "Appelez nous",
+          subtitle : "+213 551 12 34 14",
           path : "",
-          icon : "language"
+          icon : "phone_icon"
         },
         {
-          link : "Français",
+          title : "Contactez nous",
+          subtitle : "ero@gmail.com",
           path : "",
-          icon : "account_circle"
+          icon : "mail_icon"
         },
       ],
     }
+  },
+  methods : {
+    getImgUrl(pet) {
+      var images = require.context('./assets/Header', false, /\.png$/)
+      return images('./' + pet + ".png")
+    } 
+  },
+  computed : {
+      
   }
 }
 </script>

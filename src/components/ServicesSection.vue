@@ -12,72 +12,100 @@
         </v-flex>
       </v-layout>
     </v-container>
-     <v-container grid-list-xl  fluid style="margin-bottom: 50px;"> 
-      <v-layout  align-center>
-        <v-hover>
-          <v-flex xs12 sm3 class="shadow-effect" slot-scope="{ hover }" 
-              :class="`elevation-${hover ? 12 : 2}`">
-              <v-card class="elevation-0 transparent card" height ="515" > 
-                <v-card-text class ="justify-center">
-                  <img :src="require('../assets/doc_1.jpg')"  height="300px" width="260px" >
-                </v-card-text>
-                <v-card-title primary-title class="layout">
-                  <div class="headline text-xs-center gradient">Tests et exercices personnalisés</div>
-                </v-card-title>
-                <v-card-text>
-                  Le fruit d’un savoir-faire qui met en valeur la différence des cas et des perturbations rencontrés chez les patients. 
-                </v-card-text>  
-              </v-card>
+    <v-container grid-list-xl  fluid style="margin-bottom: 50px;"> 
+      <v-layout  align-center row class="mx-2">
+          <v-flex xs12 sm4>
+            <v-layout column  align-center>
+              <v-flex xs12 sm6>
+                <v-card class="elevation-0 transparent card" > 
+                  <v-card-text class ="justify-center">
+                    <v-layout  align-center row>
+                      <v-flex xs2>
+                        <img :src="require('../assets/Services/logo1.png')"  height="60px" width="60px">
+                      </v-flex>
+                      <v-flex xs10>
+                        <span class="display-1 text-xs-center font-weight-bold gradient">
+                          Tests et exercices personnalisés
+                        </span>
+                      </v-flex>
+                    </v-layout>
+                  </v-card-text>
+                  <v-card-text class = "subheading">
+                    Le fruit d’un savoir-faire qui met en valeur <br> la différence des cas et des perturbations <br> rencontrés chez les patients. 
+                  </v-card-text>  
+                </v-card> 
+              </v-flex>
+
+              <v-flex xs12 sm6>
+                <v-card class="elevation-0 transparent card" > 
+                  <v-card-text class ="justify-center">
+                    <v-layout  align-center row>
+                      <v-flex xs2>
+                        <img :src="require('../assets/Services/logo3.png')"  height="60px" width="60px">
+                      </v-flex>
+                      <v-flex xs10>
+                        <span class="display-1 text-xs-center font-weight-bold gradient">
+                          Un réseau important
+                        </span>
+                      </v-flex>
+                    </v-layout>
+                  </v-card-text>
+                  <v-card-text class = "subheading">
+                    Un annuaire contenant une liste de coordonnées <br>de toutes les parties actionnaires impliquées dans <br>la prise en charge orthophonique.
+                  </v-card-text>  
+                </v-card> 
+              </v-flex>
+                 
+            </v-layout>
           </v-flex>
-        </v-hover>
-        <v-hover>
-          <v-flex xs12 sm3 class="shadow-effect" slot-scope="{ hover }" 
-              :class="`elevation-${hover ? 12 : 2}`">
-            <v-card class="elevation-0 transparent card" height ="515">
-              <v-card-text class ="justify-center">
-                <img :src="require('../assets/doc_2.jpg')"  height="300px" width="260px" >
-              </v-card-text>
-              <v-card-title primary-title class="layout">
-                <div class="headline text-xs-center gradient">Une prise en charge complémentaire</div>
-              </v-card-title>
-              <v-card-text>
-                Et harmonieuse basée sur l’interaction entre orthophonistes et professionnels. <br> <br>
-              </v-card-text>
-            </v-card>
+
+          <v-flex xs12 sm4>
+            <img :src="require('../assets/Services/doc_3.jpg')" height="100%" width="100%">
           </v-flex>
-        </v-hover>
-        <v-hover>
-          <v-flex xs12 sm3 class="shadow-effect" slot-scope="{ hover }" 
-              :class="`elevation-${hover ? 12 : 2}`">
-            <v-card class="elevation-0 transparent card" height ="515">
-              <v-card-text class ="justify-center">
-                <img :src="require('../assets/doc_3.jpg')"  height="300px" width="260px" >
-              </v-card-text>
-              <v-card-title primary-title class="layout justify-center">
-                 <div class="headline text-xs-center gradient"> Un réseau important</div>
-              </v-card-title>
-              <v-card-text>
-                Un annuaire contenant une liste de coordonnées de toutes les parties actionnaires impliquées dans la prise en charge orthophonique. <br><br>
-              </v-card-text>
-            </v-card>
+          <v-flex xs12 sm4>
+            <v-layout column  align-center>
+              <v-flex xs12 sm6>
+                <v-card class="elevation-0 transparent card" > 
+                  <v-card-text class ="justify-center">
+                    <v-layout  align-center row>
+                      <v-flex xs2>
+                        <img :src="require('../assets/Services/logo2.png')"  height="60px" width="60px">
+                      </v-flex>
+                      <v-flex xs10>
+                        <span class="display-1 text-xs-center font-weight-bold gradient">
+                          Une prise en charge complémentaire
+                        </span>
+                      </v-flex>
+                    </v-layout>
+                  </v-card-text>
+                  <v-card-text class = "subheading">
+                    Et harmonieuse basée sur l’interaction entre <br>orthophonistes et professionnels.
+                  </v-card-text>  
+                </v-card>  
+              </v-flex>
+
+              <v-flex xs12 sm6>
+                <v-card class="elevation-0 transparent card" > 
+                  <v-card-text class ="justify-center">
+                    <v-layout  align-center row>
+                      <v-flex xs2>
+                        <img :src="require('../assets/Services/logo4.png')"  height="60px" width="60px">
+                      </v-flex>
+                      <v-flex xs10>
+                        <span class="display-1 text-xs-center font-weight-bold gradient">
+                          Restez branché
+                        </span>
+                      </v-flex>
+                    </v-layout>
+                  </v-card-text>
+                  <v-card-text class = "subheading">
+                    Une actualité enrichissante contenant des nouveautés <br> autour de plusieurs thématiques tournant <br> autour l’orthophonie dans tous ses aspects. 
+                  </v-card-text>  
+                </v-card>  
+              </v-flex>
+                 
+            </v-layout>
           </v-flex>
-        </v-hover>
-        <v-hover>
-          <v-flex xs12 sm3 class="shadow-effect" slot-scope="{ hover }" 
-              :class="`elevation-${hover ? 12 : 2}`">
-            <v-card class="elevation-0 transparent card" height ="515" >
-              <v-card-text class ="justify-center">
-                <img :src="require('../assets/doc_4.jpg')"  height="300px" width="260px" >
-              </v-card-text>
-              <v-card-title primary-title class="layout justify-center">
-                <div class="headline text-xs-center gradient"> Restez branché</div>
-              </v-card-title>
-              <v-card-text>
-                Une actualité enrichissante contenant des nouveautés autour de plusieurs thématiques tournant autour l’orthophonie dans tous ses aspects. <br> <br>
-              </v-card-text>
-            </v-card>
-          </v-flex>
-        </v-hover>
       </v-layout>
     </v-container> 
   </section>
