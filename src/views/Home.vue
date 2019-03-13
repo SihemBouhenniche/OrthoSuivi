@@ -46,23 +46,24 @@
     </v-parallax>
     <Devider/>
     <ServicesSection id = "services"/>
+    <WhySection id="why"/>
     <StatistiquesDevider/>
     <WorkSection/>
-    <DefinitionSection id= "definition"/>
-    <WhySection id="why"/>
-    <ContactSection id="contact"/>
-    <Footer/>
+    <OrthophonistesSection/>
+    <PlusDevider/>
+    <Footer id="contact"/>
   </section>
 </template>
 
 <script>
   import Devider from '../components/Devider'
+  import PlusDevider from '../components/PlusDevider'
   import StatistiquesDevider from '../components/StatistiquesDevider'
   import DefinitionSection from '../components/DefinitionSection'
   import ServicesSection from '../components/ServicesSection'
   import WorkSection from '../components/WorkSection'
+  import OrthophonistesSection from '../components/OrthophonistesSection'
   import WhySection from '../components/WhySection'
-  import ContactSection from '../components/ContactSection'
   import ConnexionDialog from '../components/ConnexionDialog'
   import Footer from '../components/Footer'
   export default {
@@ -72,10 +73,11 @@
       ConnexionDialog,
       ServicesSection,
       WhySection,
-      ContactSection,
       Footer,
       StatistiquesDevider,
-      WorkSection
+      WorkSection,
+      OrthophonistesSection,
+      PlusDevider
     },
     data: () => ({
       items : [

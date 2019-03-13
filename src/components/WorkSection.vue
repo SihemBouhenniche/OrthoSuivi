@@ -56,12 +56,24 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </span>
-          <v-expansion-panel popout class = "mt-5" focusable v-model="panel">
-            <v-expansion-panel-content v-for="(item,i) in items" :key="i" class = "my-1"
-              style = "background-color: #e0e0e0; border-radius: 50px;">
-              <div slot="header" class="title">{{item.title}}</div>
+          <v-expansion-panel 
+              popout 
+              class = "mt-5" 
+              focusable>
+            <v-expansion-panel-content 
+              v-for="(item,i) in items" 
+              :key="i" 
+              class = "my-1"
+              style = "background-color: #e0e0e0; border-radius: 50px;"
+              focusable
+              >
+              <div slot="header" class="title">
+                {{item.title}}
+              </div>
               <v-card style = "background-color: #fff; border-radius: 50px;">
-                <v-card-text class="grey lighten-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+                <v-card-text >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </v-card-text>
               </v-card>
             </v-expansion-panel-content>
           </v-expansion-panel>
@@ -97,5 +109,13 @@
 </script>
 
 <style>
-
+  .v-expansion-panel__container--active .v-expansion-panel__header{
+    background-color: #2196f3;
+    border-radius: 50px;
+    color: #fff;
+  }
+  .v-expansion-panel__container--active{
+    background-color: transparent!important;
+    box-shadow: none!important;
+  }
 </style>
