@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-parallax class= "gradient-background py-5 my-5" height="100%">
+    <v-parallax class= "gradient-background py-5" height="100%">
       <v-layout align-center justify-center row wrap>
         <v-flex xs12 sm8>
           <div class="text-xs-center">
