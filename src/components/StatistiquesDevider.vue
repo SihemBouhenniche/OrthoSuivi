@@ -1,11 +1,11 @@
 <template>
   <section>
-    <v-parallax :src="require('../assets/Statistiques/background.jpg')" height="500">
-      <v-layout align-center justify-center row>
-        <v-flex xs12 sm2>
+    <v-parallax :src="require('../assets/Statistiques/background.jpg')" height="100%">
+      <v-layout align-center justify-center row wrap>
+        <v-flex xs12 sm2 class="hidden-sm-and-down">
           
         </v-flex>
-        <v-flex xs12 sm2>
+        <v-flex xs12 sm6 md2>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>
@@ -25,7 +25,7 @@
             </v-card-text>  
           </v-card> 
         </v-flex>
-        <v-flex xs12 sm2>
+        <v-flex xs12 sm6 md2>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>
@@ -45,7 +45,7 @@
             </v-card-text>  
           </v-card> 
         </v-flex>
-        <v-flex xs12 sm2>
+        <v-flex xs12 sm6 md2>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>
@@ -65,7 +65,7 @@
             </v-card-text>  
           </v-card> 
         </v-flex>
-        <v-flex xs12 sm2>
+        <v-flex xs12 sm6 md2>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>
@@ -85,7 +85,7 @@
             </v-card-text>  
           </v-card> 
         </v-flex>
-        <v-flex xs12 sm2>
+        <v-flex xs12 md2 class="hidden-sm-and-down">
           
         </v-flex>
 

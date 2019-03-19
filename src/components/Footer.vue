@@ -3,7 +3,7 @@
     <v-container fluid class="white--text" style = "padding: 0px;">
       <div class="grey darken-3 white--text py-5 px-5">
         <v-layout row wrap>
-          <v-flex xs12 sm3>
+          <v-flex xs12 sm6 md3>
             <v-list two-line subheader>
               <v-subheader inset class="headline white--text font-weight-bold">Restez connecté</v-subheader>
 
@@ -39,7 +39,7 @@
               </v-btn>
            </div>  
           </v-flex>
-          <v-flex xs12 sm3>
+          <v-flex xs12 sm6 md3>
             <v-list subheader>
               <v-subheader inset class="headline white--text font-weight-bold">Liens rapides</v-subheader>
 
@@ -56,7 +56,7 @@
               </v-list-tile> 
             </v-list>   
           </v-flex>
-          <v-flex xs12 sm3 >
+          <v-flex xs12 sm6 md3 >
             <v-list subheader>
               <v-subheader inset class="headline white--text font-weight-bold">Nos Services</v-subheader>
 
@@ -73,7 +73,7 @@
               </v-list-tile> 
             </v-list>   
           </v-flex>
-          <v-flex xs12 sm3>
+          <v-flex xs12 sm6 md3>
             <div>
               <ContactSection/>
             </div>

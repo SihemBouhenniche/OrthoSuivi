@@ -13,8 +13,8 @@
       </v-layout>
     </v-container>
     <v-container grid-list-xl  fluid style="margin-bottom: 50px;"> 
-      <v-layout  align-center row class="mx-5">
-        <v-flex xs12 sm3>
+      <v-layout  align-center row class="mx-5" wrap>
+        <v-flex xs12 sm6 md3>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>
@@ -59,7 +59,7 @@
           </v-card> 
         </v-flex>
 
-        <v-flex xs12 sm3>
+        <v-flex xs12 sm6 md3>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>
@@ -104,7 +104,7 @@
           </v-card> 
         </v-flex>
 
-        <v-flex xs12 sm3>
+        <v-flex xs12 sm6 md3>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>
@@ -149,7 +149,7 @@
           </v-card> 
         </v-flex>
 
-        <v-flex xs12 sm3>
+        <v-flex xs12 sm6 md3>
           <v-card class="elevation-0 transparent card" > 
             <v-card-text class ="justify-center">
               <v-layout  align-center column>

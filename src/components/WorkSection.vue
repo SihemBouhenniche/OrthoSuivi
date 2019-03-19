@@ -1,7 +1,7 @@
 <template>
   <section >
-    <v-layout row class = "mx-5 mt-5">
-        <v-flex xs12 sm8>
+    <v-layout row class = "mx-5 mt-5" wrap>
+        <v-flex sm12 md8>
           <div class="text-xs-center mt-5">
             <h2 class="display-1 gradient font-weight-bold">Méthode de travail</h2>
           </div>
@@ -9,8 +9,8 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </span>
-          <v-layout  align-center row class = "mt-5">
-            <v-flex xs12 sm6 class= "mx-3">
+          <v-layout row class = "mt-5">
+            <v-flex sm12 md6 class= "mx-3">
               <v-card>
                 <v-img
                   :src="require('../assets/Work/c1.jpg')"
@@ -28,7 +28,7 @@
                 </v-card-title>
               </v-card>
             </v-flex>
-            <v-flex xs12 sm6 class= "mx-3">
+            <v-flex sm12 md6 class= "mx-3">
               <v-card>
                 <v-img
                   :src="require('../assets/Work/c5.jpg')"
@@ -48,7 +48,7 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12 sm4 class = "mt-5">
+        <v-flex sm12 md4 class = "mt-5">
           <div class="text-xs-center">
             <h2 class="display-1 gradient font-weight-meduim mt-3">Tests & Exercices</h2>
           </div>

@@ -13,15 +13,15 @@
       </v-layout>
     </v-container>
     <v-container grid-list-xl  fluid style="margin-bottom: 50px;"> 
-      <v-layout  align-center row class="mx-2">
-          <v-flex xs12 sm4>
-            <v-layout column  align-center>
+      <v-layout  align-center justify-center row class="mx-2" wrap>
+          <v-flex sm12 md4>
+            <v-layout column>
               <v-flex xs12 sm6>
                 <v-card class="elevation-0 transparent card" > 
-                  <v-card-text class ="justify-center">
-                    <v-layout  align-center row>
+                  <v-card-text class="text-sm-left">
+                    <v-layout  row>
                       <v-flex xs2>
-                        <img :src="require('../assets/Services/logo1.png')"  height="60px" width="60px">
+                        <v-img :src="require('../assets/Services/logo1.png')" width = "100%"></v-img>
                       </v-flex>
                       <v-flex xs10>
                         <span class="display-1 text-xs-center font-weight-bold gradient">
@@ -38,10 +38,10 @@
 
               <v-flex xs12 sm6>
                 <v-card class="elevation-0 transparent card" > 
-                  <v-card-text class ="justify-center">
-                    <v-layout  align-center row>
+                  <v-card-text class="text-sm-left">
+                    <v-layout row>
                       <v-flex xs2>
-                        <img :src="require('../assets/Services/logo3.png')"  height="60px" width="60px">
+                        <v-img :src="require('../assets/Services/logo3.png')" width = "100%"></v-img>
                       </v-flex>
                       <v-flex xs10>
                         <span class="display-1 text-xs-center font-weight-bold gradient">
@@ -59,17 +59,18 @@
             </v-layout>
           </v-flex>
 
-          <v-flex xs12 sm4>
-            <img :src="require('../assets/Services/doc_3.jpg')" height="100%" width="100%">
+          <v-flex sm12 md4>
+            <img :src="require('../assets/Services/doc_3.jpg')" height="100%" width="100%" class="hidden-sm-and-down">
           </v-flex>
-          <v-flex xs12 sm4>
-            <v-layout column  align-center>
-              <v-flex xs12 sm6>
+
+          <v-flex sm12 md4>
+            <v-layout column>
+              <v-flex xs12>
                 <v-card class="elevation-0 transparent card" > 
-                  <v-card-text class ="justify-center">
-                    <v-layout  align-center row>
+                  <v-card-text class="text-sm-left">
+                    <v-layout row>
                       <v-flex xs2>
-                        <img :src="require('../assets/Services/logo2.png')"  height="60px" width="60px">
+                        <v-img :src="require('../assets/Services/logo2.png')" width = "100%"></v-img>
                       </v-flex>
                       <v-flex xs10>
                         <span class="display-1 text-xs-center font-weight-bold gradient">
@@ -84,12 +85,12 @@
                 </v-card>  
               </v-flex>
 
-              <v-flex xs12 sm6>
+              <v-flex xs12>
                 <v-card class="elevation-0 transparent card" > 
-                  <v-card-text class ="justify-center">
-                    <v-layout  align-center row>
+                  <v-card-text class="text-sm-left">
+                    <v-layout row>
                       <v-flex xs2>
-                        <img :src="require('../assets/Services/logo4.png')"  height="60px" width="60px">
+                        <v-img :src="require('../assets/Services/logo4.png')" width = "100%"></v-img>
                       </v-flex>
                       <v-flex xs10>
                         <span class="display-1 text-xs-center font-weight-bold gradient">

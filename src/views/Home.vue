@@ -1,32 +1,55 @@
 <template>
   <section>
     <v-parallax :src="require('../assets/Main Description/doctor1.jpg')" height="600" class="padding-parallax">
+      <v-navigation-drawer
+        absolute
+        temporary
+        v-model="drawer"
+        app
+        dark
+      >
+        <v-list dense>
+          <v-list-tile v-for = "item in items" :key = "item.title" @click="$vuetify.goTo(item.link, options)">
+            <v-list-tile-content>
+              <v-list-tile-title>{{item.title}}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      </v-navigation-drawer>
       <v-toolbar color = "grey lighten-5" class = "px-5">
+        <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-toolbar-side-icon>
         <v-toolbar-items class="hidden-sm-and-down px-5 mx-5">
           <v-btn flat color="blue darken-3" v-for = "item in items" :key = "item.title" @click="$vuetify.goTo(item.link, options)">
             {{item.title}}
           </v-btn>
         </v-toolbar-items>
          <v-spacer></v-spacer>
-           <div class="mx-5 px-5">
+         <v-layout row wrap align-center justify-center class="hidden-sm-and-down">
+            <v-flex xs2></v-flex>
+           <v-flex xs2>
               <v-btn icon>
                 <v-icon color = "#2196f3">fab fa-facebook</v-icon>
               </v-btn>
-
+           </v-flex>
+           <v-flex xs2>
               <v-btn icon>
                 <v-icon color = "#2196f3">fab fa-twitter</v-icon>
               </v-btn>
-
+           </v-flex>
+           <v-flex xs2>
               <v-btn icon>
                 <v-icon color = "#2196f3">fab fa-google-plus</v-icon>
               </v-btn>
-
+           </v-flex>
+           <v-flex xs2>
               <v-btn icon>
                 <v-icon color = "#2196f3">fab fa-linkedin</v-icon>
               </v-btn>
-           </div>
+           </v-flex>
+           <v-flex xs2></v-flex>
+         </v-layout>
       </v-toolbar>
-      <v-layout row wrap class="pa-5" style = "margin-left: 150px;">
+      <v-layout row wrap class="pa-5" style = "margin-left: 150px;" id="definition">
         <v-flex xs12 sm6 md4>
           <h1 class="h1 gradient text-xs-center">
             ERO
@@ -48,8 +71,9 @@
     <ServicesSection id = "services"/>
     <WhySection id="why"/>
     <StatistiquesDevider/>
-    <WorkSection/>
-    <OrthophonistesSection/>
+    <WorkSection id="how"/>
+    <NouvelleSection id="news"/>
+    <OrthophonistesSection id="team"/>
     <PlusDevider/>
     <Footer id="contact"/>
   </section>
@@ -66,6 +90,7 @@
   import WhySection from '../components/WhySection'
   import ConnexionDialog from '../components/ConnexionDialog'
   import Footer from '../components/Footer'
+  import NouvelleSection from '../components/NouvelleSection'
   export default {
     components: {
       DefinitionSection,
@@ -77,9 +102,11 @@
       StatistiquesDevider,
       WorkSection,
       OrthophonistesSection,
-      PlusDevider
+      PlusDevider,
+      NouvelleSection
     },
     data: () => ({
+      drawer : true,
       items : [
         {
           title : "Home",
@@ -90,8 +117,16 @@
           link : "#services",
         },
         {
-          title : "Pourqoui ERO ?",
-          link : "#why",
+          title : "Méthode de travail",
+          link : "#how",
+        },
+        {
+          title : "Nouvelles",
+          link : "#news",
+        },
+        {
+          title : "Nos orthophonistes",
+          link : "#team",
         },
         {
           title : "Contact",
