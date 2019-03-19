@@ -1,13 +1,13 @@
 <template>
   <section>
-    <v-parallax class= "gradient-background" height="200">
-      <v-layout align-center justify-center row>
+    <v-parallax class= "gradient-background py-5 my-5" height="100%">
+      <v-layout align-center justify-center row wrap>
         <v-flex xs12 sm8>
           <div class="text-xs-center">
             <h1 class="display-1 white--text mb-3 font-weight-bold">Nouveaux offres pour nos patients abonnés</h1>
           </div>
         </v-flex>
-        <v-flex xs12 sm4>
+        <v-flex xs12 sm4 class="text-xs-center">
           <v-btn large round color="primary" dark>En savoir plus</v-btn>
         </v-flex>
       </v-layout>

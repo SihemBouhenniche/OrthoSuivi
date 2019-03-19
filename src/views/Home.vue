@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-parallax :src="require('../assets/Main Description/doctor1.jpg')" height="600" class="padding-parallax">
+    <v-parallax :src="require('../assets/Main Description/doctor1.jpg')" height="700" class="padding-parallax">
       <v-navigation-drawer
         absolute
         temporary
@@ -49,12 +49,12 @@
            <v-flex xs2></v-flex>
          </v-layout>
       </v-toolbar>
-      <v-layout row wrap class="pa-5" style = "margin-left: 150px;" id="definition">
+      <v-layout row wrap class="pa-5" id="definition">
         <v-flex xs12 sm6 md4>
           <h1 class="h1 gradient text-xs-center">
             ERO
           </h1>
-          <div class="black--text subheading font-weight-medium">
+          <div class="black--text text-xs-justify subheading font-weight-medium">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

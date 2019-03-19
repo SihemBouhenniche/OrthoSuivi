@@ -1,16 +1,21 @@
 <template>
   <v-app>
-    <v-toolbar app flat color = "grey lighten-5" height="80px">
-      <v-toolbar-title class = "ml-5 pl-5 font-weight-medium headline gradient"> {{name}} </v-toolbar-title>
+    <v-toolbar app flat color = "grey lighten-5" height="100%">
+      <v-toolbar-title class = "ml-5 font-weight-medium headline gradient"> {{name}} </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="px-5">
-        <v-btn flat v-for = "item in links" :key = "item.title">
-          <v-img :src="getImgUrl(item.icon)"  height="40px" width="40px" ></v-img>
-          <div style="display: inline-block; margin-left: 10px;" >
-            <span class="font-weight-bold"> {{item.title}} </span><br>
-            <span class="font-weight-regular"> {{item.subtitle}} </span>
-          </div>
-        </v-btn>
+        <v-layout align-center justify-center row wrap>
+          <v-flex xs12 sm6 v-for = "item in links" :key = "item.title">
+            <v-btn flat>
+              <v-img :src="getImgUrl(item.icon)"  height="40px" width="40px" ></v-img>
+              <div style="display: inline-block; margin-left: 10px;" >
+                <span class="font-weight-bold"> {{item.title}} </span><br>
+                <span class="font-weight-regular"> {{item.subtitle}} </span>
+              </div>
+            </v-btn>
+          </v-flex>
+        </v-layout>
+        
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
